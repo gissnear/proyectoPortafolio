@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #2e2e31;
+}
+/* Container principal*/
+.container-saludo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Contenedor del saludo, mi nombre, a que me dedico*/
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase para los margenes de ariba y los costados*/
+.margenes{
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Clase para el estido de letra del saludo */
+.saludo{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+/* Clase con los estilos para el nombre*/
+.miNombre{
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(139, 25, 25);
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* Clase con los estilos para la info de lo que me dedico */
+.miHobbie{
+    font-size: 16px;
+    font-weight: 200;
+    color: #616161;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Contenedor para el boton que hago*/
+.container-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase con los estilos para el boton*/
+.boton-hago{
+    background-color: rgb(139, 25, 25);
+    color: white;
+    border: 1px solid rgb(139, 25, 25);
+    border-radius: 100px;
+    padding: 15px 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+/* Container de la imagen */
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase con el tamaño de la imagen*/
+.imagen-info{
+    display: block;
+    width: 100%;
+}
+/* Clase para el diseño de la parte de Mis conocimientos */
+.misConocimientos{
+    background-color: rgb(235, 134, 134);
+    height: 190vh;
+}
+/* Container de la informacion de conocimientos */
+.info-mis-conocimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Clase para el diseño de titulo Mis conocimientos */
+h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+/* Clase para el diseño del parrafo */
+p{
+    max-width: 400px;
+    text-align: center;
+}
+/* Container para el acomodo de las tarjetas de Mis conocimientos */
+.container_conocimiento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* Clase para el dieño de las tarjetas */
+.card-conocimientos{
+    background-color: rgb(235, 134, 134);
+    color: black;
+    border: 2px solid rgb(116, 12, 12);
+    border-radius: 8px;
+    width: 40vw;
+    height: 30vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase para los margenes entre las tarjetas de Mis conocimientos */
+.margen-card{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Componete para cambiar el tamaño de la imagen */
+.imagen-conocimientos{
+    width: 15vw;
+}
+/* Clase para ponerle un espaciado entre la imagen y el texto de las card*/
+.padding-p{
+    padding-top: 15px;
+}
+/* Clase para el diseño de la frase */
+.cita{
+    background-color: rgb(139, 25, 25);
+    height: 90vh;
+}
+/* Container con la informacion para la frase */
+.container-frase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Crear espacio para cada componente con la informacion */
+.padding-35{
+    padding-bottom: 35px;
+}
+/* Clase para margenes laterales */
+.margen-lateral{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Clase para el diseño del parrafo en la frase */
+.frase{
+    font-size: 16px;
+    max-width: 800px;
+    color: white;
+}
+/* Clase para el diseño de quien escribio la frase */
+.frase-quien{
+    font-weight: 900;
+    font-size: 1.69em;
+    color: white;
+}
+/* Container con los componetes de la informacion: -PROYECTOS- */
+.info_proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* Clase para el diseño del titulo: -MIS PROYECTOS- */
+.titulo-proyectos{
+    font-size: 40px;
+    font-weight: 900;
+}
+/* Clase para el diseño del parafo: -MIS PROYECTOS- */
+.pproyectos{
+    font-weight: 400;
+    font-size: 16px;
+}
+/* Container para las tarjetas con imagenes de: -MIS PROYECTOS- */
+.mis_proyectos{
+    color: black;
+    border: 2px solid rgb(116, 12, 12);
+    border-radius: 8px;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase para el espaciado entre cada tarjeta: -MIS PROYECTOS- */
+.margen-10{
+    margin-bottom: 10px;
+}
+/* Clase con las dimensiones para las imagenes: -MIS PROYECTOS- */
+.imagen-proyecto{
+    height: 40vh;
+}
+/* Clase para el estilo de la descripcion de los proyectos: -MIS PROYECTOS- */
+.texto-card{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* Container: -CONTACTO- */
+.info-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+/* Container donde se encuentran los iconos y los enlaces: -CONTACTO- */
+.contactarme{
+    display: flex;
+    flex-direction: column;
+}
+/* Container donde se encuetra el icono y nombre: -CONTACTO- */
+.interno{
+    display: flex;
+    justify-content:start;
+    flex-direction: row;
+}
+.conctactame{
+    text-align: unset;
+}
+/* Clase para el tamaño de los iconos: -CONTACTO- */
+.mini_iconos{
+    border-radius: 100px;
+    width: 6vw;
+}
+/* Clase para generar espacio entre icono y frase: -CONTACTO- */
+.padding-left{
+    padding-left: 10px;
+}
+/* Clase para generar espacio entre iconos: -CONTACTO- */
+.margen-20{
+    margin-bottom: 20px;
+}
+.escribe{
+    text-align: unset;
+}
+/* Clase para DIV en cuanto a la orientacion de los componentes: -CONTACTO= ESCRIBIRME- */
+.container-campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+/* Clase para el diseño de las etiquetas de cada campo: -CONTACTO= ESCRIBIRME- */
+label{
+    font-weight: 600;
+}
+/* Input para los campos de tipo texto: -CONTACTO= ESCRIBIRME- */
+input[type=text]{
+    background-color: #f6f7fb;
+    color: darkgray;
+    border-radius: 20px;
+    border: 1px solid #f6f7fb;
+    width: 100%;
+    padding: 10px 15px;
+}
+/* Input para los campos de tipo correo: -CONTACTO= ESCRIBIRME- */
+input[type=email]{
+    background-color: #f6f7fb;
+    color: darkgray;
+    border-radius: 20px;
+    border: 1px solid #f6f7fb;
+    width: 100%;
+    padding: 10px 15px;
+}
+/* Llamada al componete para definir su estilo: -CONTACTO= ESCRIBIRME- */
+textarea{
+    background-color: #f6f7fb;
+    color: darkgray;
+    border-radius: 20px;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px;
+}
+/* Clase para definir el estilo y el diseño del boton enviar -CONTACTO= ESCRIBIRME- */
+.boton-enviar{
+    background-color: rgb(139, 25, 25);
+    color: white;
+    border: 1px solid rgb(139, 25, 25);
+    border-radius: 100px;
+    padding: 15px 40px;
+    font-weight: 500;
+    width: 35%;
+    text-align: center;
+}
+/* DIV para definir el diseño: FOOTER */
+footer{
+    background-color: rgb(139, 25, 25);
+}
+.fin{
+    padding: 80px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Componete donde se define el estilo que tendra: FOOTER */
+h4{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+
+
+
+/* Responsive para web */
+@media screen and (min-width:600px){
+    /* ------------------------ HEADER -------------------------- */
+
+    /* ------------------------ HOLA ---------------------------- */
+    /* Clase con la informacion lateral; saludo: -HOLA- */
+    .info{
+        flex-direction: column;
+        justify-content:center;
+        align-items:flex-start;
+    }
+    /* Clase para cambiar el tamaño de la imagen; saludo: -HOLA- */
+    .imagen-info{
+        width: 40vw;
+    }
+    /* Clase para alinear la imagen; saludo: -HOLA- */
+    .imagen{
+        justify-content:flex-end;
+        align-items:flex-end;
+    }
+    /* Clase para ajustar el saludo: -HOLA- */
+    .container-saludo{
+        flex-direction: row;
+    }
+
+    /* ----------------------- MIS CONOCIMIENTOS -------------------------------------- */
+    /* Clase para modificar el conteiner: -CONOCIMIENTOS- */
+    .container_conocimiento{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    /* Clase para modificar el tamaño de la imagen dentro de la card: -CONOCIMIENTOS- */
+    .imagen-conocimientos{
+        width: 80px;
+    }
+
+    /* ------------------- FRASE --------------------------- */
+
+    /* ------------------- MIS PROYECTOS -------------------------------------------- */
+    /* Clase para modificar tamaño de la tarjeta y direcion*/
+    .mis_proyectos{
+        width: 40vw;
+        height: 40vh;
+        flex-direction: row;
+    }
+    /* Clase para cambiar el tamaño de la imagen */
+    .imagen-proyecto{
+        width: 20vw;
+    }
+
+    /* ---------------- CONTACTO --------------------------------- */
+
+    /* ---------------- FOOTER ----------------------------------- */
+
+}
