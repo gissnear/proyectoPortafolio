@@ -7,49 +7,63 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="columna margen-lateral">
+            <nav class="nav-header">
+                <ul class="nav-menu">
+                    <li><a href="#hola" class="nav efecto">HOLA</a></li>
+                    <li><a href="#conocimiento" class="nav efecto">CONOCIMIENTOS</a></li>
+                    <li><a href="#proyecto" class="nav efecto">PROYECTOS</a></li>
+                    <li><a href="#contacto" class="nav seleccionado efecto">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!--Aqui empieza el contenido con la informacion principal -->
-    <div class="container-saludo margenes">
+    <div id="hola" class="container-saludo margenes">
         <div class="info">
             <p class="saludo">¡Hola! Soy</p>
             <h1 class="miNombre">Karen Valdez</h1>
             <p class="miHobbie">Ingeniera en Sistemas Computacionales, QA y fan de la musica como de la lectura</p>
             <div class="container-boton"><h2 class="boton-hago">LO QUE HAGO</h2></div>
         </div>
-        <div class="imagen"><img src="./imagenes/bugs.png" alt="Yo" class="imagen-info"></div>
+        <div class="imagen"><img src="./imagenes/fixing_bugs.png" alt="Yo" class="imagen-info"></div>
     </div>
     <!--Aqui empieza el contenido de los conocimientos -->
-    <div class="misConocimientos">
+    <div id="conocimiento" class="misConocimientos">
         <div class="info-mis-conocimentos">
             <h1 class="margenes padding-35">Mis conocimientos</h1>
             <p class="margen-lateral">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo dicta neque. Fuga aliquid illo, nulla numquam inventore ad neque eius modi debitis aut nesciunt assumenda consectetur provident unde aperiam!</p>
         </div>
         <!--Aqui contiene las tarjetas para cada uno de los comocimientos -->
         <div class="container_conocimiento margenes">
-            <div class="card-conocimientos margen-card ">
-                <img src="./imagenes/icono_html-5.png" alt="html" class="imagen-conocimientos">
-                <p class="padding-p">HTML 5</p>
+            <div class="cards margenes">
+                <div class="card-conocimientos margen-card">
+                    <img src="./imagenes/icono_html-5.png" alt="html" class="imagen-conocimientos">
+                    <p class="padding-p">HTML 5</p>
+                </div>
+                <div class="card-conocimientos margen-card">
+                    <img src="./imagenes/icono-css-3.png" alt="css" class="imagen-conocimientos">
+                    <p class="padding-p">CSS 3 </p>
+                </div>
+                <div class="card-conocimientos margen-card">
+                    <img src="./imagenes/icono_Sass_logo.png" alt="sass" class="imagen-conocimientos">
+                    <p class="padding-p">Sass</p>
+                </div>
+                <div class="card-conocimientos margen-card">
+                    <img src="./imagenes/icono_javascript.png" alt="javascript" class="imagen-conocimientos">
+                    <p class="padding-p">JavaScript</p>
+                </div>
+                <div class="card-conocimientos margen-card">
+                    <img src="./imagenes/icono_React.js.png" alt="react" class="imagen-conocimientos">
+                    <p class="padding-p">React</p>
+                </div>
+                <div class="card-conocimientos margen-card">
+                    <img src="./imagenes/icono_logo_git.png" alt="git" class="imagen-conocimientos">
+                    <p class="padding-p">GIT</p>
+                </div>
             </div>
-            <div class="card-conocimientos margen-card">
-                <img src="./imagenes/icono-css-3.png" alt="css" class="imagen-conocimientos">
-                <p class="padding-p">CSS 3 </p>
-            </div>
-            <div class="card-conocimientos margen-card">
-                <img src="./imagenes/icono_Sass_logo.png" alt="sass" class="imagen-conocimientos">
-                <p class="padding-p">Sass</p>
-            </div>
-            <div class="card-conocimientos margen-card">
-                <img src="./imagenes/icono_javascript.png" alt="javascript" class="imagen-conocimientos">
-                <p class="padding-p">JavaScript</p>
-            </div>
-            <div class="card-conocimientos margen-card">
-                <img src="./imagenes/icono_React.js.png" alt="react" class="imagen-conocimientos">
-                <p class="padding-p">React</p>
-            </div>
-            <div class="card-conocimientos margen-card">
-                <img src="./imagenes/icono_logo_git.png" alt="git" class="imagen-conocimientos">
-                <p class="padding-p">GIT</p>
-            </div>
+            
         </div>
     </div>
     <!-- Aqui esta el div con la infromacion de la frase -->
@@ -61,7 +75,7 @@
         </div>
     </div>
     <!-- Aqui comienza el modulo de MIS PROYECTOS -->
-    <div class="proyecto margenes">
+    <div id="proyecto" class="proyecto margenes">
         <!-- DIV con la informacion al comienzo de MIS PROYECTOS -->
         <div class="info_proyectos">
             <h1 class="titulo-proyectos padding-35">Mis proyectos</h1>
@@ -114,7 +128,7 @@
         </div>
     </div>
     <!-- Aqui comienza el modulo: CONTACTO -->
-    <div class="contacto margenes">
+    <div id="contacto" class="contacto margenes">
         <!-- Este div contiene la informacion principal: CONTACTO-->
         <div class="info-contacto">
             <h1 class="padding-35">Contactame</h1>
