@@ -1,45 +1,61 @@
+/* Importacion del estilo de fuente */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Aqui esta los elementos generales */
 *{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: #2e2e31;
 }
+/* los estilos para el etiqueta header */
 header{
     padding: 25px 0;
     display: flex;
     justify-content: center;
 }
+/* Definicion de tamaño para div llamado columa para header */
 .columna{
     width: 100%;
 }
+/* Aqui se define el diseño de la clase en cada uno de los enlaces */
 .nav{
     line-height: 2.5;
     padding: 0 10px;
 }
+/* Aqui se define el diseño de los enlaces */
 a{
     text-decoration: none;
     color: #2e2e31;
     display: block;
 }
+
+/* Estilo que tendran las listas desordenadas */
 ul{
     list-style: none;
 }
+/* Definicion de la posicion de la clase Nav */
 .nav-header{
     display: flex;
     justify-content: flex-end;
 }
+/* Diseño de la clase dentro de la lista desordenada */
 .nav-menu{
     display: flex;
     margin: 0;
 }
+/* Diseño que tendra el boton de contacto */
 .seleccionado{
     background-color: rgb(139, 25, 25);
     color: white;
     border-radius: 50px;
     padding: 0 30px;
 }
-/* Container principal*/
+/* Efecto que tiene cuando se pasa el raton por encima del menu principal */
+.efecto:hover{
+    color: rgb(139, 25, 25);
+    cursor: pointer;
+}
+/* Container principal para el saludo*/
 .container-saludo{
     display: flex;
     flex-direction: column;
@@ -107,10 +123,6 @@ ul{
 .imagen-info{
     display: block;
     width: 100%;
-}
-.efecto:hover{
-    color: rgb(139, 25, 25);
-    cursor: pointer;
 }
 /* Clase para el diseño de la parte de Mis conocimientos */
 .misConocimientos{
@@ -206,6 +218,12 @@ p{
     font-size: 1.69em;
     color: white;
 }
+/* clase para la posicion de los elementos que tendran cada una de las tarjetas de: -PROYECTOS- */
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /* Container con los componetes de la informacion: -PROYECTOS- */
 .info_proyectos{
     display: flex;
@@ -221,24 +239,13 @@ p{
 /* Clase para el diseño del parafo: -MIS PROYECTOS- */
 .pproyectos{
     font-weight: 400;
-    font-size: 16px;
 }
 /* Container para las tarjetas con imagenes de: -MIS PROYECTOS- */
 .mis_proyectos{
     color: black;
     border: 2px solid rgb(116, 12, 12);
     border-radius: 8px;
-    width: 90vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.container-proyecto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
 /* Clase para el espaciado entre cada tarjeta: -MIS PROYECTOS- */
 .margen-10{
@@ -246,11 +253,17 @@ p{
 }
 /* Clase con las dimensiones para las imagenes: -MIS PROYECTOS- */
 .imagen-proyecto{
-    height: 40vh;
+    height: 50%;
+    width: 100%;
+}
+/* Clase para la posicion que tendra la imagen y el parrafo: -PROYECTOS- */
+.container-proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* Clase para el estilo de la descripcion de los proyectos: -MIS PROYECTOS- */
 .texto-card{
-    font-size: 16px;
     font-weight: 600;
 }
 /* Container: -CONTACTO- */
@@ -269,6 +282,7 @@ p{
     display: flex;
     justify-content:start;
     flex-direction: row;
+    align-items: center;
 }
 .conctactame{
     text-align: unset;
@@ -298,6 +312,7 @@ p{
 /* Clase para el diseño de las etiquetas de cada campo: -CONTACTO= ESCRIBIRME- */
 label{
     font-weight: 600;
+    color: rgb(139, 25, 25);
 }
 /* Input para los campos de tipo texto: -CONTACTO= ESCRIBIRME- */
 input[type=text]{
@@ -340,10 +355,18 @@ textarea{
 footer{
     background-color: rgb(139, 25, 25);
 }
+/* Clase que tiene el dieño del: -FOOTER- */
 .fin{
     padding: 80px 20px 60px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase para el posicionamiento que tendran los elementos: iconos y frase -FOOTER- */
+.container-fin{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -354,9 +377,6 @@ h4{
     margin-top: 30px;
     font-weight: 300;
 }
-
-
-
 
 /* Responsive para web */
 @media screen and (min-width:600px){
@@ -382,6 +402,7 @@ h4{
     .container-saludo{
         flex-direction: row;
     }
+    /* Clase para alinear la descripcion de lo que hago: -HOLA- */
     .miHobbie{
         text-align: left;
     }
@@ -396,10 +417,10 @@ h4{
     .imagen-conocimientos{
         width: 80px;
     }
+    /* Clase para modificar el tamaño: -CONOCIMIENTOS- */
     .card-conocimientos{
         width: 30%;
     }
-    
 
     /* ------------------- FRASE --------------------------- */
     .cita{
@@ -408,18 +429,28 @@ h4{
 
     /* ------------------- MIS PROYECTOS -------------------------------------------- */
     /* Clase para modificar tamaño de la tarjeta y direcion*/
-    .mis_proyectos{
-        width: 40vw;
-        height: 40vh;
-        flex-direction: row;
-    }
+    
     /* Clase para cambiar el tamaño de la imagen */
     .imagen-proyecto{
         width: 20vw;
     }
 
     /* ---------------- CONTACTO --------------------------------- */
-
+    /* Clase para el diseño y posicionamieto de la card: -CONTACTO- */
+    .card-contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid rgb(139, 25, 25);
+        border-radius: 10px;
+        padding: 50px;
+    }
+    
     /* ---------------- FOOTER ----------------------------------- */
-
+    /*Moficicacion en el tamaño de los iconos de redes sociales: -FOOTER- */
+    .mini_iconos{
+        width: 4vw;
+        margin-left: 15px;
+    }
 }

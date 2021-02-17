@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Aqui empieza la pagina con un header -->
     <header>
+        <!-- DIV para contener el nav-->
         <div class="columna margen-lateral">
+            <!-- Aqui empieza nav -->
             <nav class="nav-header">
+                <!-- Una lista desordenada para el menu del header-->
                 <ul class="nav-menu">
+                    <!-- Lista y enlace para HOLA-->
                     <li><a href="#hola" class="nav efecto">HOLA</a></li>
+                    <!-- Lista y enlace para CONOCIMIENTO-->
                     <li><a href="#conocimiento" class="nav efecto">CONOCIMIENTOS</a></li>
+                    <!-- Lista y enlace para PROYECTO-->
                     <li><a href="#proyecto" class="nav efecto">PROYECTOS</a></li>
+                    <!-- Lista y enlace para el boton CONTACTO-->
                     <li><a href="#contacto" class="nav seleccionado efecto">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -21,12 +29,20 @@
     </header>
     <!--Aqui empieza el contenido con la informacion principal -->
     <div id="hola" class="container-saludo margenes">
+        <!--DIV que contien el saludo, nombre, el que hago y boton-->
         <div class="info">
+            <!-- Saludo -->
             <p class="saludo">¡Hola! Soy</p>
+            <!-- Nombre -->
             <h1 class="miNombre">Karen Valdez</h1>
+            <!-- El que hago -->
             <p class="miHobbie">Ingeniera en Sistemas Computacionales, QA y fan de la musica como de la lectura</p>
-            <div class="container-boton"><h2 class="boton-hago">LO QUE HAGO</h2></div>
+            <div class="container-boton">
+                <!-- Que hago -->
+                <h2 class="boton-hago">LO QUE HAGO</h2>
+            </div>
         </div>
+        <!--DIV que contendra la imagen -->
         <div class="imagen"><img src="./imagenes/fixing_bugs.png" alt="Yo" class="imagen-info"></div>
     </div>
     <!--Aqui empieza el contenido de los conocimientos -->
@@ -38,32 +54,37 @@
         <!--Aqui contiene las tarjetas para cada uno de los comocimientos -->
         <div class="container_conocimiento margenes">
             <div class="cards margenes">
+                <!-- HTML -->
                 <div class="card-conocimientos margen-card">
                     <img src="./imagenes/icono_html-5.png" alt="html" class="imagen-conocimientos">
                     <p class="padding-p">HTML 5</p>
                 </div>
+                <!-- CSS -->
                 <div class="card-conocimientos margen-card">
                     <img src="./imagenes/icono-css-3.png" alt="css" class="imagen-conocimientos">
                     <p class="padding-p">CSS 3 </p>
                 </div>
+                <!-- Sass -->
                 <div class="card-conocimientos margen-card">
                     <img src="./imagenes/icono_Sass_logo.png" alt="sass" class="imagen-conocimientos">
                     <p class="padding-p">Sass</p>
                 </div>
+                <!-- Javascript -->
                 <div class="card-conocimientos margen-card">
                     <img src="./imagenes/icono_javascript.png" alt="javascript" class="imagen-conocimientos">
                     <p class="padding-p">JavaScript</p>
                 </div>
+                <!-- React -->
                 <div class="card-conocimientos margen-card">
                     <img src="./imagenes/icono_React.js.png" alt="react" class="imagen-conocimientos">
                     <p class="padding-p">React</p>
                 </div>
+                <!-- GIT -->
                 <div class="card-conocimientos margen-card">
                     <img src="./imagenes/icono_logo_git.png" alt="git" class="imagen-conocimientos">
                     <p class="padding-p">GIT</p>
                 </div>
             </div>
-            
         </div>
     </div>
     <!-- Aqui esta el div con la infromacion de la frase -->
@@ -83,45 +104,52 @@
         </div>
         <!-- DIV con las tarjetas/card con imagen y descripcion de MIS PORYECTOS -->
         <div class="proyectos">
+            <!-- DIV del portafolio -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="./imagenes/341794316041201.webp" alt="Imagen de portafolio" class="imagen-proyecto"> 
+                    <img src="./imagenes/miProyecto.png" alt="Imagen de portafolio" class="imagen-proyecto"> 
                     <p class="padding-p texto-card">Portafolio</p>
                 </div>
             </div>
+            <!-- DIV del generador -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_mobile_user_7oqo.png" alt="Imagen de generador" class="imagen-proyecto">
+                    <img src="./imagenes/undraw_mobile_user_7oqo.png" alt="Imagen de generador" class="imagen-proyecto">
                     <p class="padding-p texto-card">Generador de memes</p>
                 </div>
             </div>
+            <!-- DIV del Match 3 -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_old_day_6x25.png" alt="Imagen de match" class="imagen-proyecto">
+                    <img src="./imagenes/undraw_old_day_6x25.png" alt="Imagen de match" class="imagen-proyecto">
                     <p class="padding-p texto-card">Match 3</p>
                 </div>
             </div>
+            <!-- DIV del controlador -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_wallet_aym5.png" alt="Imagen de controlador" class="imagen-proyecto">
+                    <img src="./imagenes/undraw_wallet_aym5.png" alt="Imagen de controlador" class="imagen-proyecto">
                     <p class="padding-p texto-card">Controlador de gastos</p>
                 </div>
             </div>
+            <!-- DIV del administrador -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_calendar_dutt.png" alt="Imagen de administrador" class="imagen-proyecto">
+                    <img src="./imagenes/undraw_calendar_dutt.png" alt="Imagen de administrador" class="imagen-proyecto">
                     <p class="padding-p texto-card">Administrador de reuniones</p>
                 </div>
             </div>
+            <!-- DIV del app -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_to_do_list_a49b.png" alt="Imagen de app" class="imagen-proyecto">
+                    <img src="./imagenes/undraw_add_post_64nu.png" alt="Imagen de app" class="imagen-proyecto">
                     <p class="padding-p texto-card">Todo app</p>
                 </div>
             </div>
+            <!-- DIV del buscador -->
             <div class="mis_proyectos margen-10">
                 <div class="container-proyecto">
-                    <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_movie_night_fldd.png" alt="Imagen de buscador" class="imagen-proyecto">
+                    <img src="./imagenes/undraw_movie_night_fldd.png" alt="Imagen de buscador" class="imagen-proyecto">
                     <p class="padding-p texto-card">Buscador de peliculas</p>
                 </div>
             </div>
@@ -129,94 +157,99 @@
     </div>
     <!-- Aqui comienza el modulo: CONTACTO -->
     <div id="contacto" class="contacto margenes">
-        <!-- Este div contiene la informacion principal: CONTACTO-->
-        <div class="info-contacto">
-            <h1 class="padding-35">Contactame</h1>
-            <p class="conctactame padding-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat odio magnam quo non consectetur eveniet ratione quisquam pariatur quia eius, deleniti dolorum repellendus repellat id delectus. Laborum, harum laboriosam!</p>
+            <div class="card-contacto margenes">
+            <!-- Este DIV contiene los enlaces a cada  red social -->
+            <div class="contactarme">
+                <div class="info-contacto">
+                    <h1 class="padding-35">Contactame</h1>
+                    <p class="conctactame padding-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat odio magnam quo non consectetur eveniet ratione quisquam pariatur quia eius, deleniti dolorum repellendus repellat id delectus. Laborum, harum laboriosam!</p>
+                </div>
+                <!-- DIV para cada una de mis redes sociales: ISTAGRAM-->
+                <div class="margen-20">
+                    <a href="https://www.instagram.com/kgisela_vb/" >
+                    <!-- DIV para icono y nombre de referencia a la red social-->
+                        <div class="interno">
+                            <img src="./imagenes/icono_instagram.png" alt="Istagram" class="mini_iconos"> 
+                            <p class="padding-left">kgisela_vb</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- DIV para cada una de mis redes sociales: GIT-->
+                <div class="margen-20">
+                    <a href="https://github.com/gissnear" >
+                        <!-- DIV para icono y nombre de referencia a la red social-->
+                        <div class="interno">
+                            <img src="./imagenes/icono_github.png" alt="Github" class="mini_iconos"> 
+                            <p class="padding-left">Gissnear</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- DIV para cada una de mis redes sociales: LINKEDIN-->
+                <div class="margen-20">
+                    <a href="https://www.linkedin.com/in/karen-gisela-valdez-betancourt-57798b191/" >
+                        <!-- DIV para icono y nombre de referencia a la red social-->
+                        <div class="interno">
+                            <img src="./imagenes/icono_linkedin.png" alt="LinkedIn" class="mini_iconos">
+                            <p class="padding-left">Karen Gisela Valdez Betancourt</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- DIV para cada una de mis redes sociales: GIMAL-->
+                <div class="margen-20">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                        <!-- DIV para icono y nombre de referencia a la red social-->
+                        <div class="interno">
+                            <img src="./imagenes/icono_gmail.png" alt="Correo" class="mini_iconos">
+                            <p class="padding-left">gissnear@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Aqui comienza el modulo: CONTACTO-> ESCRIBIME -->
+            <div class="contacto-escibre">
+                <h1 class="escribe margen-20">Escribeme</h1>
+                <form>
+                    <!-- DIV para contener los label y campos-->
+                    <div class="container-campos">
+                        <!-- Estiqueta y campo: Nombre-->
+                        <label for="idNombre" class="margen-10">Nombre *</label>
+                        <input type="text" id="idNombre" name="nombre" autocomplete="off" placeholder="p. ej.: Ada" class="padding-left margen-10">
+                        <!-- Estiqueta y campo: Apellido-->
+                        <label for="idApellido" class="margen-10">Apellido *</label>
+                        <input type="text" id="idApellido" name="apellido" autocomplete="off" placeholder="p. ej.: Lovelance" class="padding-left margen-10">
+                        <!-- Estiqueta y campo: Correo-->
+                        <label for="idCorreo" class="margen-10">Email *</label>
+                        <input type="email" id="idCorreo" name="correo" autocomplete="off" placeholder="p.ej.: ada.lovelance@email.com" class="padding-left margen-10">
+                        <!-- Estiqueta y campo: Mensaje-->
+                        <label for="idMensaje" class="margen-10">Mensaje *</label>
+                        <textarea cols=50 rows="5" maxlength="10" class="padding-left margen-10">Escriba un mensaje aqui</textarea>
+                        <p class="boton-enviar">Enviar</p>
+                    </div>
+                </form>
+            </div>
         </div>
-        <!-- Este DIV contiene los enlaces a cada  red social -->
-        <div class="contactarme">
-            <!-- DIV para cada una de mis redes sociales: ISTAGRAM-->
-            <div class="margen-20">
-                <a href="https://www.instagram.com/kgisela_vb/" >
-                    <!-- DIV para icono y nombre de referencia a la red social-->
-                    <div class="interno">
-                        <img src="./imagenes/icono_instagram.png" alt="Istagram" class="mini_iconos"> 
-                        <p class="padding-left">kgisela_vb</p>
-                    </div>
-                </a>
-            </div>
-            <!-- DIV para cada una de mis redes sociales: GIT-->
-            <div class="margen-20">
-                <a href="https://github.com/gissnear" >
-                    <!-- DIV para icono y nombre de referencia a la red social-->
-                    <div class="interno">
-                        <img src="./imagenes/icono_github.png" alt="Github" class="mini_iconos"> 
-                        <p class="padding-left">Gissnear</p>
-                    </div>
-                </a>
-            </div>
-            <!-- DIV para cada una de mis redes sociales: LINKEDIN-->
-            <div class="margen-20">
-                <a href="https://www.linkedin.com/in/karen-gisela-valdez-betancourt-57798b191/" >
-                    <!-- DIV para icono y nombre de referencia a la red social-->
-                    <div class="interno">
-                        <img src="./imagenes/icono_linkedin.png" alt="LinkedIn" class="mini_iconos">
-                        <p class="padding-left">Karen Gisela Valdez Betancourt</p>
-                    </div>
-                </a>
-            </div>
-            <!-- DIV para cada una de mis redes sociales: GIMAL-->
-            <div class="margen-20">
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-                    <!-- DIV para icono y nombre de referencia a la red social-->
-                    <div class="interno">
-                        <img src="./imagenes/icono_gmail.png" alt="Correo" class="mini_iconos">
-                        <p class="padding-left">gissnear@gmail.com</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Aqui comienza el modulo: CONTACTO-> ESCRIBIME -->
-    <div class="contacto-escibre margenes">
-        <h1 class="escribe margen-20">Escribeme</h1>
-        <form>
-            <!-- DIV para contener los label y campos-->
-            <div class="container-campos">
-                <!-- Estiqueta y campo: Nombre-->
-                <label for="idNombre" class="margen-10">Nombre *</label>
-                <input type="text" id="idNombre" name="nombre" autocomplete="off" placeholder="p. ej.: Ada" class="padding-left margen-10">
-                <!-- Estiqueta y campo: Apellido-->
-                <label for="idApellido" class="margen-10">Apellido *</label>
-                <input type="text" id="idApellido" name="apellido" autocomplete="off" placeholder="p. ej.: Lovelance" class="padding-left margen-10">
-                <!-- Estiqueta y campo: Correo-->
-                <label for="idCorreo" class="margen-10">Email *</label>
-                <input type="email" id="idCorreo" name="correo" autocomplete="off" placeholder="p.ej.: ada.lovelance@email.com" class="padding-left margen-10">
-                <!-- Estiqueta y campo: Mensaje-->
-                <label for="idMensaje" class="margen-10">Mensaje *</label>
-                <textarea cols=50 rows="5" maxlength="10" class="padding-left margen-10">Escriba un mensaje aqui</textarea>
-                <p class="boton-enviar">Enviar</p>
-            </div>
-        </form>
     </div>
     <!-- Aqui termina la pagia y se define el pie de esta-->
     <footer>
         <div class="fin margenes">
             <!-- DIV donde se contiene los iconos-->
             <div class="container-fin">
-                <a href="https://www.instagram.com/kgisela_vb/" >
-                    <img src="./imagenes/icono_instagram.png" alt="Istagram" class="mini_iconos">
-                </a>
-                <a href="https://github.com/gissnear" >
-                    <img src="./imagenes/icono_github.png" alt="Github" class="mini_iconos"> 
-                </a>
-                <a href="https://www.linkedin.com/in/karen-gisela-valdez-betancourt-57798b191/" >
-                    <img src="./imagenes/icono_linkedin.png" alt="LinkedIn" class="mini_iconos">
-                </a>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-                    <img src="./imagenes/icono_gmail.png" alt="Correo" class="mini_iconos">
-                </a>
+                    <!-- enlace a istagram -->
+                    <a href="https://www.instagram.com/kgisela_vb/">
+                        <img src="./imagenes/icono_instagram.png" alt="Istagram" class="mini_iconos">
+                    </a>
+                    <!-- enlace a github -->
+                    <a href="https://github.com/gissnear" >
+                        <img src="./imagenes/icono_github.png" alt="Github" class="mini_iconos"> 
+                    </a>
+                    <!-- enlace a linkedin -->
+                    <a href="https://www.linkedin.com/in/karen-gisela-valdez-betancourt-57798b191/" >
+                        <img src="./imagenes/icono_linkedin.png" alt="LinkedIn" class="mini_iconos">
+                    </a>
+                    <!-- enlace a gmail -->
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                        <img src="./imagenes/icono_gmail.png" alt="Correo" class="mini_iconos">
+                    </a>
             </div>
             <!-- Etiqueta final -->
             <h4>Hecho con ❤️ por Karen Valdez</h4>
