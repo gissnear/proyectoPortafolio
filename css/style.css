@@ -12,6 +12,11 @@ header{
     padding: 25px 0;
     display: flex;
     justify-content: center;
+    background:white;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
 }
 /* Definicion de tamaño para div llamado columa para header */
 .columna{
@@ -52,7 +57,6 @@ ul{
 }
 /* Efecto que tiene cuando se pasa el raton por encima del menu principal */
 .efecto:hover{
-    color: rgb(139, 25, 25);
     cursor: pointer;
 }
 /* Container principal para el saludo*/
@@ -287,6 +291,10 @@ p{
 .conctactame{
     text-align: unset;
 }
+.a-iconos{
+    text-decoration: none;
+    display: block;
+}
 /* Clase para el tamaño de los iconos: -CONTACTO- */
 .mini_iconos{
     border-radius: 100px;
@@ -379,7 +387,45 @@ h4{
 }
 
 /* Responsive para web */
-@media screen and (min-width:600px){
+@media screen and (max-width:320px){
+    header, a, ul, .columna, .nav, .nav-header, .nav-menu, .seleccionado, .efecto:hover {
+        display: none;
+    }
+    .misConocimientos{
+        height: 300vh;
+    }
+    .boton-enviar{
+        width: 55%;
+    }
+}
+/* Aqui comienza el media queries: RESPONSIVE */
+
+/* Tamaño para dispositivo de 480px */
+@media screen and (max-width:480px){
+    header, a, ul, .columna, .nav, .nav-header, .nav-menu, .seleccionado, .efecto:hover {
+        display: none;
+    }
+}
+/* Tamaño para dispositivo de 600px */
+@media screen and (max-width:600px){
+    header, a, ul, .columna, .nav, .nav-header, .nav-menu, .seleccionado, .efecto:hover {
+        display: none;
+    }
+}
+/* Tamaño para dispositivo de 7680px */
+@media screen and (max-width:768px){
+    header, a, ul, .columna, .nav, .nav-header, .nav-menu, .seleccionado, .efecto:hover {
+        display: none;
+    }
+}
+/* Tamaño para dispositivo de 900px */
+@media screen and (max-width:900px){
+    header, a, ul, .columna, .nav, .nav-header, .nav-menu, .seleccionado, .efecto:hover {
+        display: none;
+    }
+}
+/* Tamaño para dispositivo de 1200px, web */
+@media screen and (min-width:1200px){
     /* ------------------------ HEADER -------------------------- */
 
     /* ------------------------ HOLA ---------------------------- */
@@ -452,5 +498,8 @@ h4{
     .mini_iconos{
         width: 4vw;
         margin-left: 15px;
+    }
+    a{
+        color: white;
     }
 }
